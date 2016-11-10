@@ -1,0 +1,255 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+#FEFCF4 - almost white
+#E7E5DE - light grey
+#BBBFC0 - darker grey
+#364655 - dark blue
+#005FB7 - blue
+**************************************************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Taviraj');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #FEFCF4;
+    color: #364655;
+}
+/***************************
+DEFAULTS - MOBILE FIRST
+***************************/
+h1{
+    font: bold 4rem 'Taviraj', 'Times New Roman', serif;
+}
+h2{
+    font: bold 2.618rem 'Taviraj', 'Times New Roman', serif;
+}
+li, p, a{
+    font: bold 1.618rem 'Open Sans', 'Arial', sans-serif;
+}
+pre, code, kbd{
+    font: normal 1.0rem 'Open Sans', 'Arial', monospace;
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+header h1 {
+    padding: 1rem;
+}
+.masthead {
+    color: #FEFCF4;
+    background-image: url('https://unsplash.it/2000/300/?image=3');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #005FB7;
+}
+nav{
+    width: calc(100% - 4rem);
+    margin: 2rem;
+    border: 4px solid #364655;
+}
+nav>ul{
+    width: 100%;
+}
+nav li{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    border-bottom: 2px solid #364655;
+}
+nav li:last-child {
+    border-bottom: none;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff', sans-serif;
+    text-align: center;
+    font-size: 2.618rem;
+    text-decoration: none;
+    font-weight: normal;
+    color: #364655;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #E7E5DE;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    color: #005FB7;
+    background-color: #BBBFC0;
+}
+main{
+    width: 100%;
+}
+.col{
+    float: none;
+    width: 100%;
+}
+.col h2 {
+    padding-bottom: 0.5rem;
+}
+.col img{
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    max-width: 100%;
+}
+.col p {
+    line-height: 1.618;
+    padding-bottom: 1.5rem;
+    font-weight: normal;
+}
+.col p:last-child {
+    padding-bottom: 2rem;
+}
+footer{
+    width: 100%;
+    color: #FEFCF4;
+    padding: 0.5rem;
+    background-color: #364655;
+}
+footer li {
+    list-style: none;
+}
+footer li a {
+    padding: 0.5rem;
+    display: block;
+    float: left;
+    color: inherit;
+    font-size: 1rem;
+    text-decoration: none;
+}
+footer li a:hover {
+    color: #BBBFC0;
+}
+
+@media screen and (min-width:600px){
+    nav {
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+        border: 2px solid #364655;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    nav li {
+        width: 20%;
+        border: none;
+        float: left;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        font-size: 1.618rem;
+        display: inline-block;
+        width: 100%;
+    }
+    .col {
+        width: 50%;
+        padding: 1rem;
+        float: left;
+    }
+    .col img {
+        width: 60%;
+        float: left;
+        padding: 1rem 1rem 1rem 0;
+    }
+    footer {
+        margin: 0 auto;
+        clear: both;
+        width: 90%;
+    }
+}
+@media screen and (min-width: 800px){
+    nav {
+        border: none;
+    }
+    nav li {
+        width: auto;
+    }
+    nav a,
+    nav a:link,
+    nav a:visited {
+        background-color: #FEFCF4;
+        font-size: 2.1rem;
+        display: inline;
+        width: auto;
+        font-weight: bold;
+    }
+    nav a:active,
+    nav a:focus,
+    nav a:hover{
+        background-color: #FEFCF4;
+    }
+    .col img {
+        width: 50%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1200px){
+    nav {
+        width: 30%;
+        float: left;
+    }
+    nav li {
+        margin-left: 2rem;
+        width: 100%;
+    }
+    main {
+        width: 70%;
+        margin: 0;
+        float: left;
+    }
+    .col img {
+        width: 55%;
+    }
+}
+
+
+
+/* CLEARFIX (Nicolas Gallagher) */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
