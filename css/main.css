@@ -66,6 +66,7 @@ header h1 {
 }
 .masthead {
     color: #FEFCF4;
+    text-shadow: 1px 1px #005FB7;
     background-image: url('https://unsplash.it/2000/300/?image=3');
     background-repeat: no-repeat;
     background-position: center;
