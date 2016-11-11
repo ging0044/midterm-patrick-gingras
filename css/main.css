@@ -70,6 +70,7 @@ header h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #005FB7;
+    background-blend-mode: luminosity;
 }
 nav{
     width: calc(100% - 4rem);
